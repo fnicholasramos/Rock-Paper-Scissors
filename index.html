@@ -4,22 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
-  <link rel="icon" href="tab_icon.png">
+  <link rel="icon" href="rps_choices/left/left-scissor.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <div class="container">
     <div>
-      <h1>Rock Paper Scissor Game via console</h1>
-      <img src="rps.png">
+      <h1>Rock Paper Scissor Game</h1>
+      <!-- <img src="rps.png"> -->
     </div>
 
-    <h3>Please open console using F12</h3>
+    <h1>Pick your choice!</h1>
+
+    <div class="choices">
+      <!-- Paper -->
+      <button id="paper" disabled>
+        <img src="/rps_choices/left/paper-left.png">
+      </button>
+
+      <!-- Scissor -->
+      <button id="scissors">
+        <img src="/rps_choices/left/left-scissor.png">
+      </button>
+
+      <!-- Rock -->
+      <button id="rock">
+        <img src="rps_choices/left/rock-left.png">
+      </button>
+    </div>
+
+    <div class="btn">
+      <button onclick="start()" class="start">Start</button>
+      <button class="reset" style="display: none;">Play Again</button>
+    </div>
+
+
+    <div id="results" class="results">
+      <div class="round">Round <span class="roundCount">0</span></div>
+
+      <div id="round-result"></div>
+
+      <div class="score">
+        <div class="human">
+          Human
+          <p id="yourScore"></p>
+        </div>
+
+      <div>
+        <img src="versus.png" width="55px" class="versus">
+      </div>
+
+
+        <div class="computer">
+          Computer
+          <p id="computerScore"></p>
+        </div>
+
+        
+      </div>
+    </div>
+    
+    <!-- Announce winner -->
+    <h2 id="winner"></h2>
   </div>
-
-
-  <script src="scripts.js"></script>  
+  
+  <script src="test.js"></script>  
 </body>
 
 </html>
