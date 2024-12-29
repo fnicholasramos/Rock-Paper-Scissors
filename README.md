@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors
 
-This project is called Rock Paper Scissor Game, and it can be played through the dev console.
+This project is called Rock Paper Scissor Game
 
 Live site: https://fnicholasramos.github.io/Rock-Paper-Scissors/
 
